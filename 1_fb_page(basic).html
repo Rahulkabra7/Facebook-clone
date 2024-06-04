@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        .nav-bar{
+            background-color: white;
+            height: 40px;
+            margin-bottom: 7px;
+            display:flex ;
+
+        }
+        .search-but{
+            border: 20px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+        }
+        .mid-nav{
+            list-style-type: none;
+            display: flex;
+            margin-left: 16%;
+        }
+        .mid-nav > li {
+            margin-left: 75px;
+        }
+        .end-nav{
+            list-style-type: none;
+            display: flex;
+            margin-left: 14%;
+        }
+        .end-nav > li {
+            margin-left: 30px;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 3px solid black; */
+            background-color: whitesmoke;
+        }
+        #div1 {
+            background-color: lightgray ;
+            width: 25%;
+            height: 900px;
+            border: 2px solid;
+        }
+        #div2 {
+            background-color: lightgray ;
+            width: 50%;
+            height: 900px;
+            border: 2px solid;
+        }
+        #div3 {
+            background-color: lightgray ;
+            width: 20%;
+            height: 900px;
+            border: 2px solid;
+        }
+        #img_div {
+
+            width: 90%;
+            height: 500px;
+            align-items: center;
+            margin: 30px;
+            background-color: gray;
+        }
+        #img2{
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="./1_fb_page(basic).html"><img style="height: 40px; width: 40px; margin-right: 10px;" src="./img/facebook.png" alt=""></a>
+        <input class="search-but" type="text" placeholder="Search Facebook">
+        <ul class="mid-nav">
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/home.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/video.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/store.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/communication.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/game-controller.png" alt=""></a></li>
+        </ul>
+
+        <ul class="end-nav">
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/dots-menu.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/chat.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 25px; width: 25px;" src="./img/bell.png" alt=""></a></li>
+            <li><a href="./1_fb_page(basic).html"><img style="height: 30px; width: 30px;" src="./img/boy.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="div1"></div>
+        <div id="div2">
+            <div id="img_div">
+                <img id="img1" src="F:\Full Stack  Dev\Basic UI\HTML\images\mac.jpg" alt="Profile">
+                <h3>Rahul Kabra</h3>
+                <img id="img2" src="F:\Web Dev\images\cellphone.jpg" alt="post">
+            </div>
+        </div>
+        <div id="div3"></div>
+    </div>
+</body>
+</html>

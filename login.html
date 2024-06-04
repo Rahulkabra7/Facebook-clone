@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fff;
+        }
+        .container{
+            display: flex;
+        }
+        .fac-img{
+            display: flex;
+            gap : 30px;
+            padding-top: 10%;
+            padding-left: 23%;
+            width: 300px;
+            height:250px;
+            padding-bottom: 0%;
+        }
+        .side-1{
+            display: inline;
+            width: 67%;
+            text-align: center;
+        }
+        .log-face-par-div{
+            padding-top: 0%;
+        }
+        .log-face-par{
+            display: flex;
+            text-align: justify;
+            font-size: 25px;
+            padding-top: 0%;
+            padding-left: 25%;
+        }
+        /* .form{
+            text-align: center;
+        } */
+        .log-btn{
+            background-color: #0866ff;
+            padding: 16;
+            width: 170px;
+            height: 25px;
+            font-weight: 200;
+            color: white;
+        }
+        .login-form{
+            border: none;
+            margin-top: 18%;
+            margin-left: -10%;
+            background-color: whitesmoke;
+            box-shadow: 12px black;
+            /* height: 200px;
+            width: 250px; */
+        }
+        /* .name .pass{
+            width: 2000px;
+        } */
+        .name{
+            margin-top: 20px;
+            width: 364px;
+            height: 63px;
+        }
+        .pass{
+            margin-top: 15px;
+            width: 364px;
+            height: 63px;
+        }
+        .log-btn{
+            background-color: #0866ff;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 364px;
+            height: 63px;
+        }
+        .cre-new-acc{
+            background-color: green;
+            margin: 20px;
+            width: 364px;
+            height: 48px;
+        }
+        .create-but{
+            background-color: green;
+            margin: 20px;
+            width: 364px;
+            height: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side-1">
+            <div>
+                <img class="fac-img" src="/img/facebook (1).png" alt="facebook-name">
+            </div>
+            <div class="log-face-par-div" >
+                <p class="log-face-par">Facebook helps you connect and share <br> with the people in your life.</p>
+            </div>
+        </div>
+        <div class="login-form" style="text-align: center; width: 400px; height: 350px;">
+            <a class="form" action="./1_fb_page(basic).html">
+                <!-- <h3>Login</h3> -->
+                <input class= "name" type="text" required placeholder="Enter your username">
+                <br>
+                <br>
+                <input class= "pass" type="password" required placeholder="password">
+                <br>
+                <br>
+                <button class="log-btn">Log in</button>
+                <br>
+                <br>
+                <a href="./new_user.html">Forgotten password?</a>
+                <!-- <div class="cre-new-acc">
+                    <a class="create-but" href="./new_user.html">Create new account</a>
+                </div> -->
+            </form>
+            <form action="./new_user.html">
+                <button class="create-but">Create new account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
