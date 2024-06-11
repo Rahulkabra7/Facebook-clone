@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: #fff;
+        body {
+            background: #fff;
+            color: #1c1e21;
+            direction: ltr;
+            line-height: 1.34;
+            margin: 0;
+            padding: 0;
+            unicode-bidi: embed;
         }
         .container{
             display: flex;
@@ -32,12 +38,9 @@
             display: flex;
             text-align: justify;
             font-size: 25px;
-            padding-top: 0%;
+            padding-top: -26%;
             padding-left: 25%;
         }
-        /* .form{
-            text-align: center;
-        } */
         .log-btn{
             background-color: #0866ff;
             padding: 16;
@@ -53,28 +56,38 @@
             margin-left: -10%;
             background-color: whitesmoke;
             box-shadow: 12px black;
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            box-sizing: border-box;
         }
         .name{
             margin-top: 20px;
+            padding: 16px;
             border: none;
             border-radius: 6px;
             font-size: 20px;
             line-height: 48px;
             padding: 0 16px;
-            width: 364px;
-            height: 63px;
+            width: 344px;
+            height: 48px;
+            border: 1px solid #dddfe2;
         }
         .pass{
-            margin-top: 20px;
+            margin-top: -5px;
+            /* padding: 16px; */
             border: none;
             border-radius: 6px;
             font-size: 20px;
             line-height: 48px;
             padding: 0 16px;
-            width: 364px;
-            height: 63px;
+            width: 344px;
+            height: 48px;
+            border: 1px solid #dddfe2;
         }
         .log-btn{
+            margin-top: -5px;
             background-color: #0866ff;
             border: none;
             border-radius: 6px;
@@ -82,7 +95,7 @@
             line-height: 48px;
             padding: 0 16px;
             width: 364px;
-            height: 63px;
+            height: 48px;
         }
         .cre-new-acc{
             background-color: #42b72a;
@@ -91,18 +104,44 @@
             height: 48px;
         }
         .create-but{
+            margin-top: 7px;
             background-color: green;
-            padding-top: 25px;
+            padding: 16px;
+            margin-left: 90px;
             border: none;
             border-radius: 6px;
             font-size: 20px;
             line-height: 48px;
             padding: 0 16px;
-            width: 364px;
-            height: 63px;
+            width: 192.61px;
+            height: 48px;
         }
         .for-got{
+            margin-top: 7px;
+            color: #0866ff;
             text-decoration: none;
+        }
+        .hr-for-cre{
+            border-bottom: 1px solid #dadde1;
+            text-align: center;
+            margin: 20px 16px;
+        }
+        .Create-page{
+            margin-top: 25px;
+        }
+        .create-but-link{
+            text-decoration: none;
+            color: whitesmoke;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 364px;
+            height: 48px;
+        }
+        .Create-page-link{
+            text-decoration: none;
+            color: black;
         }
     </style>
 </head>
@@ -116,8 +155,9 @@
                 <p class="log-face-par">Facebook helps you connect and share <br> with the people in your life.</p>
             </div>
         </div>
-        <div class="login-form" style="text-align: center; width: 450px; height: 400px;">
-            <a class="form" action="">
+        <div class="login-form" style="text-align: center; width: 396px; height: 348.83px;">
+            <form action="./1_fb_page(basic).html">
+                <!-- <a class="form"> -->
                 <!-- <h3>Login</h3> -->
                 <input class= "name" type="text" required placeholder="Enter your username">
                 <br>
@@ -125,16 +165,17 @@
                 <input class= "pass" type="password" required placeholder="password">
                 <br>
                 <br>
-                <button class="log-btn">Log in</button>
+                <input type="submit" value="Log In" id="log-id" class="log-btn">
                 <br>
                 <br>
                 <a class="for-got" href="./new_user.html">Forgotten password?</a>
-                <!-- <div class="cre-new-acc">
-                    <a class="create-but" href="./new_user.html">Create new account</a>
-                </div> -->
-            </form>
-            <form action="./new_user.html">
-                <button class="create-but">Create new account</button>
+                <hr class="hr-for-cre">
+                <div class="create-but">
+                    <a class="create-but-link" href="./new_user.html">Create new account</a>
+                </div>
+                <div class="Create-page">
+                    <a class="Create-page-link" href="./new_user.html">Create a Page</a> <span>for a celebrity, brand or business.</span>
+                </div>
             </form>
         </div>
     </div>
