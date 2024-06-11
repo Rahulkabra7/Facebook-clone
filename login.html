@@ -26,7 +26,7 @@
             text-align: center;
         }
         .log-face-par-div{
-            padding-top: 0%;
+            text-align: justify;
         }
         .log-face-par{
             display: flex;
@@ -47,24 +47,30 @@
             color: white;
         }
         .login-form{
+            float: right;
             border: none;
-            margin-top: 18%;
+            margin-top: 10%;
             margin-left: -10%;
             background-color: whitesmoke;
             box-shadow: 12px black;
-            /* height: 200px;
-            width: 250px; */
         }
-        /* .name .pass{
-            width: 2000px;
-        } */
         .name{
             margin-top: 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
             width: 364px;
             height: 63px;
         }
         .pass{
-            margin-top: 15px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
             width: 364px;
             height: 63px;
         }
@@ -79,16 +85,24 @@
             height: 63px;
         }
         .cre-new-acc{
-            background-color: green;
+            background-color: #42b72a;
             margin: 20px;
             width: 364px;
             height: 48px;
         }
         .create-but{
             background-color: green;
-            margin: 20px;
+            padding-top: 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
             width: 364px;
-            height: 48px;
+            height: 63px;
+        }
+        .for-got{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -102,8 +116,8 @@
                 <p class="log-face-par">Facebook helps you connect and share <br> with the people in your life.</p>
             </div>
         </div>
-        <div class="login-form" style="text-align: center; width: 400px; height: 350px;">
-            <a class="form" action="./1_fb_page(basic).html">
+        <div class="login-form" style="text-align: center; width: 450px; height: 400px;">
+            <a class="form" action="">
                 <!-- <h3>Login</h3> -->
                 <input class= "name" type="text" required placeholder="Enter your username">
                 <br>
@@ -114,7 +128,7 @@
                 <button class="log-btn">Log in</button>
                 <br>
                 <br>
-                <a href="./new_user.html">Forgotten password?</a>
+                <a class="for-got" href="./new_user.html">Forgotten password?</a>
                 <!-- <div class="cre-new-acc">
                     <a class="create-but" href="./new_user.html">Create new account</a>
                 </div> -->
